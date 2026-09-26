@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Memory Card</title>
+<script>
+  // Indirizzo attuale dell'app. Aggiornato da scripts/update-redirect.mjs — i QR stampati non cambiano mai.
+  var BACKEND = "https://audit-cod-traveling-nottingham.trycloudflare.com";
+  var m = location.pathname.match(/\/c\/([0-9A-Za-z]{16})\/?$/);
+  if (m) location.replace(BACKEND.replace(/\/+$/, "") + "/c/" + m[1] + location.search);
+</script>
+<style>body{font-family:-apple-system,sans-serif;display:grid;place-items:center;min-height:90vh;color:#555;text-align:center}</style>
+</head><body><p>Apertura del tuo messaggio…<br><small>Se non succede nulla, riprova tra poco.</small></p></body></html>
